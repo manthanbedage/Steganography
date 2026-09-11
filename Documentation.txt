@@ -1,0 +1,81 @@
+Name-Manthan Annaso Bedage
+Date-05-09-2026
+Project Name-Steganography 
+Stegnography-Steganography is the art of hiding information in another message or object to avoid detection.
+
+case 1---:
+sample input --: ./a.out -e beautiful.bmp secret.txt 
+Note-(output file is Not Mentioned Created stego_img.bmp as default)
+
+sample output--: 
+Encoding Part start going to Cheak validations.....:
+INFO : Output File Not mentioned Ceating stego_img.bmp as a Default:
+INFO : Validations Succesfully Done:
+INFO : Opening Requriend Files :
+INFO : Done 
+INFO : Cheking for beautiful.bmp capacity to handle secret.txt:
+INFO : Done
+INFO : Copying Header Data:
+INFO ; Done
+INFO : Encode a Magic string:
+INFO : Done
+INFO : Encoding a Secret file size
+INFO : Done
+INFO : Encoding a Secret file extension
+INFO : Done
+INFO : Encoding a Size of Data file 
+INFO : Done
+INFO : Encoding a Data
+INFO : Done
+INFO : Encoding a remaning Data
+INFO : Done
+Loading........100%
+INFO :# Encoding Done Succesfully #:
+
+case 2:
+sample input---./a.out -e beautiful.bmp secret.txt Output.bmp
+Note-Giving Output file as a Output.bmp file
+
+sample output----
+Encoding Part start going to Cheak validations.....:
+INFO : Validations Succesfully Done:
+INFO : Opening Requriend Files :
+INFO : Done 
+350INFO : Cheking for beautiful.bmp capacity to handle secret.txt:
+INFO : Done
+INFO : Copying Header Data:
+INFO ; Done
+INFO : Encode a Magic string:
+INFO : Done
+INFO : Encoding a Secret file size
+INFO : Done
+INFO : Encoding a Secret file extension
+INFO : Done
+INFO : Encoding a Size of Data file 
+INFO : Done
+INFO : Encoding a Data
+INFO : Done
+INFO : Encoding a remaning Data
+INFO : Done
+Loading........100%
+INFO :# Encoding Done Succesfully #:
+
+Case 3;
+Sample input --./a.out -d stego_img.bmp
+Sample Output--Decoding Part start:
+INFO : output file is Not Mentioned.Creating stego_output stego_output as default
+INFO : Validations Done Succesfully:
+INFO : Opening Requriend Files :
+INFO : Done :
+INFO : Enter the Magic String:
+#*
+INFO : Decoding magic string;
+INFO : Decoding stego_img.bmp file size 
+INFO : Done
+INFO : Decoding stego_img.bmp file Extension
+INFO : Done
+INFO : Decoding stego_img.bmp file Data
+INFO : Done
+INFO : ##Decoding Done Sucessfully:##
+Your Secreat Message is : My password is SECRET ;
+
